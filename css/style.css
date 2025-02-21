@@ -10,17 +10,24 @@
 
 body{
   background-color: #001;
+  display: flex;
 }
 
 
 
 .menu{
   background-color: #123;
-  width: 260px;
+  width: 100px;
   height: 100vh;
   padding: 20px;
   overflow: hidden;
   transition: 0.5s;
+  overflow: hidden;
+}
+
+.menu:hover{
+  width: 260px;
+  cursor: pointer;
 }
 
 
@@ -43,7 +50,7 @@ ul li a{
   transition: 0.5s;
 }
 
-ul li a:hover ,.active{
+ul li a:hover ,.active,td:hover{
   background-color: #ffffff55;
 }
 
@@ -83,4 +90,89 @@ ul li a i{
 .profile h2{
   font-size: 20px;
   text-transform: capitalize;
+}
+
+.content{
+  width: 100%;
+  margin: 10px;
+}
+
+.title-info{
+  background-color: rgb(4, 129, 255);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.data-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.data-info .box{
+  height: 150px;
+  background: #123;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.data-info .box:hover{
+  background-color: #ffffff55;
+  cursor: pointer;
+}
+
+.data-info .box  i{
+  font-size: 40px;
+}
+
+.data-info .box .data{
+  text-align: center;
+}
+
+.data-info .box .data span{
+  font-size: 30px;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
+td, th{
+  background-color: #123;
+  height: 40px;
+  border-radius: 8px;
+}
+
+th{
+  background-color: rgb(4, 129, 255);
+}
+
+.price, .count{
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.price{
+  background-color: green;
+}
+
+.count{
+  background-color: gold;
+  color: #000;
+}
+
+.copy{
+  align-self: center;
+  justify-content: center;
 }
